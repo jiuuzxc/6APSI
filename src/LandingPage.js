@@ -1,7 +1,12 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
+
 import './LandingPage.css';
+import './LoginPage.js';
 
 function LandingPage() {
+  const navigate = useNavigate();
+
   return (
     <div
       className="landingContainer"
@@ -15,8 +20,8 @@ function LandingPage() {
       <div className="overlay"></div>
 
       <div className="content">
-        <h1>Welcome to the Landing Page!</h1>
-        <p>You have successfully logged in. Enjoy exploring the site!</p>
+        <h1>Ni hao, Welcome to Landing Page!</h1>
+        <button className="loginButton" onClick={() => navigate('/login-page')}>Login</button>
       </div>
     </div>
   );

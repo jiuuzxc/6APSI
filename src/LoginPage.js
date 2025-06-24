@@ -10,8 +10,8 @@ function LoginPage() {
   const navigate = useNavigate();
 
   const handleLogin = () => {
-    if (username == 'guest' && password == 'abcd') {
-      navigate('/landing-page');
+    if (username === 'guest' && password === 'abcd') {
+      navigate('/');
     } else {
       alert("Invalid Login Credentials");
     }
