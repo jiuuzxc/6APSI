@@ -37,6 +37,18 @@ function LoginPage() {
           onChange={(e) => setPassword(e.target.value)}
         /><br />
 
+      
+        <div className="options">
+          
+          <div className="rememberMe">
+            <label htmlFor="remember">
+              <input type="checkbox" id="remember" />
+                Remember me
+            </label>         
+          </div>
+
+          <a href="/forgot-password" className="forgot-link">Forgot Password?</a>
+        </div>
 
         <button className="loginButton" onClick={handleLogin}>Login</button>
 
